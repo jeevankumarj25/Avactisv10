@@ -43,7 +43,7 @@ public class OrdersTest extends Base {
 		Select paymentStatus = new Select(driver.findElement(By.xpath("//select[contains(@name,'payment_status_id')]")));
 		paymentStatus.selectByVisibleText(prop.getProperty("paymentStatus"));
 		op.clickonUpdateBtn();
-		Assert.assertEquals(op.validateUpdateStatus(), "Order data has been updted");
+		Assert.assertEquals(op.validateUpdateStatus(), "Order data has been updated");
 		log.info("order status has been updated");
 	}
 	
